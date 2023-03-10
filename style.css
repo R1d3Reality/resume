@@ -1,0 +1,99 @@
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.resume__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.resume__header__name {
+  width: 100%;
+  max-width: 1280px;
+  border-bottom: black 1px solid;
+  text-align: center;
+}
+.resume__header__info {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.resume__education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 5%;
+}
+.resume__education__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 1280px;
+}
+.resume__education__list__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1280px;
+  gap: 5px;
+}
+.resume__education__list__item__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+}
+.resume__skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 5%;
+}
+.resume__skills__info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1280px;
+  align-items: flex-start;
+}
+.resume__skills__info__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .resume__header__info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .resume__education__list__item {
+    gap: 10px;
+  }
+  .resume__education__list__item__info {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .resume__education__list__item__description {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

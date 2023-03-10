@@ -1,0 +1,111 @@
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.resume {
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    &__name {
+      width: 100%;
+      max-width: 1280px;
+      border-bottom: black 1px solid;
+      text-align: center;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: row;
+      gap: 25px;
+    }
+  }
+
+  &__education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 5%;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      width: 100%;
+      max-width: 1280px;
+
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1280px;
+        gap: 5px;
+
+        &__info {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          max-width: 1280px;
+        }
+      }
+    }
+  }
+
+  &__skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 5%;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 1280px;
+      align-items: flex-start;
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .resume__header__info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .resume__education__list__item {
+    gap: 10px;
+    &__info {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  .resume__education__list__item__description {
+    display: flex;
+    justify-content: center;
+  }
+}
